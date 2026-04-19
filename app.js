@@ -1,0 +1,1 @@
+// This is a React + Vite app — all logic is in TypeScript React components
