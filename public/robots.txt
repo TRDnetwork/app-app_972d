@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://app_972d.trdnet.co/sitemap.xml

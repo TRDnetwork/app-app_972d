@@ -1,0 +1,1 @@
+-- No database required for a static portfolio site with no user accounts, forms, or dynamic content.

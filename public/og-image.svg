@@ -1,0 +1,13 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#faf8f5"/>
+  <style>
+    .title { font: bold 64px 'Satoshi', sans-serif; fill: #1a2e1a; letter-spacing: -0.05em; }
+    .subtitle { font: 400 32px 'Fraunces', serif; fill: #6b5e53; }
+  </style>
+  <text x="600" y="280" class="title" text-anchor="middle">Portfolio Pro</text>
+  <text x="600" y="340" class="subtitle" text-anchor="middle">A warm minimal personal portfolio showcasing your best work.</text>
+  <rect x="100" y="400" width="1000" height="120" fill="#e66000" opacity="0.1"/>
+  <circle cx="180" cy="460" r="40" fill="#1a2e1a"/>
+  <circle cx="260" cy="460" r="40" fill="#e66000"/>
+  <circle cx="340" cy="460" r="40" fill="#ff8c42"/>
+</svg>

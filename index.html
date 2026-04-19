@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><script>window.__SUPABASE_URL__="https://wmxnwapnfurwoalvkkwh.supabase.co";window.__SUPABASE_ANON_KEY__="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndteG53YXBuZnVyd29hbHZra3doIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzU5MDgwODEsImV4cCI6MjA5MTQ4NDA4MX0.BNgF4LD35_Ooxtkv5Pok8ldrBeHPOCDauv-ZYG1v7_Q";</script>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Pro</title>
+    <!-- SEO: Preload critical fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Satoshi:wght@700&family=Fraunces:opsz@9..144&display=swap" rel="stylesheet">
+    <!-- PERF: Load Tailwind early but defer execution to avoid render blocking -->
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    <script>
+      // PERF: Consolidate all theme config in one place, including fonts and animations
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#1a2e1a',
+              secondary: '#6b5e53',
+              accent: '#e66000',
+              'accent-alt': '#ff8c42',
+              bg: '#faf8f5',
+              surface: '#ffffff'
+            },
+            fontFamily: {
+              display: ['Satoshi', 'sans-serif'],
+              body: ['Fraunces', 'serif']
+            },
+            maxWidth: {
+              '75rem': '75rem'
+            },
+            keyframes: {
+              slideUp: {
+                '0%': { opacity: 0, transform: 'translateY(20px)' },
+                '100%': { opacity: 1, transform: 'translateY(0)' }
+              },
+              fadeInUp: {
+                '0%': { opacity: 0, transform: 'translateY(10px)' },
+                '100%': { opacity: 1, transform: 'translateY(0)' }
+              }
+            },
+            animation: {
+              'slide-up': 'slideUp 0.6s ease-in-out',
+              'fade-in-up': 'fadeInUp 0.5s ease-out'
+            }
+          }
+        }
+      };
+    </script>
+  </head>
+  <body class="bg-bg text-primary font-body leading-relaxed antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
